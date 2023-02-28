@@ -35,6 +35,6 @@ platform: linux/x86_64   # See https://aws.github.io/copilot-cli/docs/manifest/s
 environments:
   prod:
     secrets:
-      ADMIN_USER: /copilot/lattice-connect-backup/prod/secrets/admin_user
-      ADMIN_PASS: /copilot/lattice-connect-backup/prod/secrets/admin_pass
+      ADMIN_USER: /copilot/${COPILOT_APPLICATION_NAME}/prod/secrets/admin_user
+      ADMIN_PASS: /copilot/${COPILOT_APPLICATION_NAME}/prod/secrets/admin_pass
 #    cpu: 2048               # Larger CPU value for prod environment.
